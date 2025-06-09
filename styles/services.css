@@ -1,0 +1,127 @@
+.services {
+  margin-top: var(--section-spacing);
+}
+
+.section__heading-description {
+  width: 580px;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.services__card {
+  padding: 50px;
+  border-radius: 45px;
+  border: 1px solid var(--color-dark);
+  border-bottom: 6px solid var(--color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 310px;
+}
+
+.services__card--green {
+  background-color: var(--color-primary);
+}
+
+.services__card--light-green {
+  background-color: #B9FF66;
+}
+
+.services__card--dark {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.services__card--light {
+  background-color: var(--color-gray);
+}
+
+.services__card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.services__title-block {
+  margin-bottom: 93px;
+}
+
+.services__title-block-element {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 0 7px;
+  border-radius: 7px;
+  color: var(--color-text);
+  background-color: var(--color-primary);
+}
+
+.services__title-block-element--white {
+  background-color: var(--color-white);
+}
+
+.services__link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.services__link-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.services__link-title--light {
+  color: var(--color-white);
+}
+
+.services__image {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .services__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+  }
+
+  .services__card {
+    padding: 30px;
+    border-radius: 30px;
+    min-height: auto;
+  }
+
+  .services__card-content {
+    height: auto;
+  }
+
+  .services__title-block {
+    margin-bottom: 40px;
+  }
+
+  .services__title-block-element {
+    font-size: 24px;
+    padding: 0 5px;
+    height: auto;
+  }
+
+  .services__link-title {
+    font-size: 18px;
+  }
+
+  .services__image {
+    max-width: 150px;
+    height: auto;
+    margin-left: auto;
+  }
+}

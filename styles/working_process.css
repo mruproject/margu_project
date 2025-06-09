@@ -1,0 +1,123 @@
+.working-process {
+  margin-top: var(--section-spacing);
+}
+
+.working-process__heading-description {
+  width: 292px;
+}
+
+.working-process__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.working-process__step {
+  background-color: var(--color-gray);
+  border: 1px solid var(--color-dark);
+  border-bottom: 6px solid var(--color-dark);
+  border-radius: 45px;
+  padding: 41px 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.working-process__step--active {
+  background-color: var(--color-primary);
+}
+
+.working-process__step-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.working-process__step-title-block {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.working-process__step-number {
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--color-text);
+  min-width: 65px;
+}
+
+.working-process__step-title {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.working-process__step-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin-top: 30px;
+  display: none;
+}
+
+.working-process__step-divider {
+  display: none;
+  margin: 30px 0px;
+  height: 1px;
+  width: 1114px;
+  background-color: var(--color-text);
+}
+
+.working-process__step--active .working-process__step-description,
+.working-process__step--active .working-process__step-divider {
+  display: block;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .working-process__heading-description {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+  }
+
+  .working-process__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .working-process__step {
+    padding: 20px 30px;
+    border-radius: 30px;
+  }
+
+  .working-process__step-header {
+    gap: 15px;
+  }
+
+  .working-process__step-number {
+    font-size: 40px;
+    min-width: 50px;
+  }
+
+  .working-process__step-title {
+    font-size: 24px;
+  }
+
+  .working-process__step-divider {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .working-process__step-description {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .working-process__step--active .working-process__step-description {
+    display: block;
+  }
+}
+

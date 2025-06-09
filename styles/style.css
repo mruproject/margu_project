@@ -1,0 +1,19 @@
+@import "styles.css";
+
+@import "base.css";
+@import "fonts.css";
+@import "section_title.css";
+
+@import "header.css";
+@import "hero.css";
+@import "clients_logos.css";
+@import "services.css";
+@import "call_to_action.css";
+@import "case_studies.css";
+@import "working_process.css";
+@import "team.css";
+@import "testimonials.css";
+@import "contact.css";
+@import "footer.css";
+@import "swiper.css";
+@import "animation.css";

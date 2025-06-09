@@ -1,0 +1,242 @@
+.footer {
+  margin-top: var(--section-spacing);
+  color: var(--color-white);
+}
+
+.footer__container {
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  background-color: var(--color-dark);
+  padding: 55px 60px 50px 60px;
+}
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  margin-bottom: 66px;
+  gap: 155px;
+  height: 30px;
+}
+
+.footer__brand-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__brand-logo {
+  display: block;
+}
+
+.footer__menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__menu-link { 
+  color: var(--color-white);
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer__menu-link:hover {
+  color: var(--color-primary);
+}
+
+.footer__socials {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__socials-link {
+  color: var(--color-white);
+  text-decoration: none;
+  list-style-type: none; /* лучше убрать, т.к. это ссылка */
+}
+
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.contact-info__title {
+  font-size: 20px;
+  font-weight: 500;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  max-width: 126px;  
+  padding: 0 7px;
+  margin-bottom: 27px;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-radius: 7px;
+}
+
+.contact-info__email {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contact-info__phone {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contact-info__address {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.newsletter {
+  background-color: #292A32;
+  padding: 58px 40px;
+  border-radius: var(--border-radius);
+}
+
+.newsletter__form {
+  display: flex;
+  gap: 20px;
+}
+
+.newsletter__form-input {
+  background: transparent;
+  border: none;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 22px 35px;
+}
+
+.newsletter__form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter__form-input:focus {
+  outline: none;
+}
+
+.newsletter__form-button {
+  font-family: 'Space Grotesk';
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  border: none;
+  padding: 25px 35px;
+  border-radius: var(--border-radius);
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter__form-button:hover {
+  background-color: #a8e85a;
+}
+
+.footer__bottom {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding-top: 50px;
+  border-top: 1px solid var(--color-white);
+}
+
+.footer__bottom-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer__privacy-link {
+  color: var(--color-white);
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer__privacy-link:hover {
+  color: var(--color-primary);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer__container {
+    padding: 40px 30px 35px 30px;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .footer__brand {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    height: auto;
+  }
+
+  .footer__menu {
+    flex-wrap: wrap;
+    gap: 25px 15px;
+  }
+
+  .footer__menu-link {
+    font-size: 16px;
+  }
+
+  .footer__socials {
+    gap: 15px;
+  }
+
+  .contact-info__title {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .contact-info__email,
+  .contact-info__phone,
+  .contact-info__address {
+    font-size: 16px;
+  }
+
+  .newsletter {
+    width: 100%;
+    padding: 40px 25px;
+  }
+
+  .newsletter__form {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .newsletter__form-input {
+    padding: 16px 20px;
+    font-size: 16px;
+  }
+
+  .newsletter__form-button {
+    padding: 18px 25px;
+    font-size: 16px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 30px;
+  }
+
+  .footer__bottom-text,
+  .footer__privacy-link {
+    font-size: 16px;
+  }
+}

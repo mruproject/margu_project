@@ -1,0 +1,89 @@
+.call-to-action {
+  margin-top: 123.5px;
+  margin-bottom: 23.5px;
+  background-color: var(--color-gray);
+  border-radius: 45px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  gap: 186px;
+  max-height: 347px;
+}
+
+.call-to-action__content {
+  width: 500px;
+  height: 227px;
+}
+
+.call-to-action__title {
+  font-size: 30px;
+  font-weight: 500;
+  height: 38px;
+  margin-bottom: 26px;
+  color: var(--color-text);
+}
+
+.call-to-action__description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 26px;
+  color: var(--color-text);
+}
+
+.call-to-action__button {
+  font-family: 'Space Grotesk';
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  border: none;
+  padding: 20px 35px;
+  border-radius: var(--border-radius);
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.call-to-action__button:hover {
+  background-color: #2a2b35;
+}
+
+.call-to-action__image {
+  margin-right: 75px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .call-to-action {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 60px 0px;
+    padding: 40px 30px;
+    max-height: none;
+  }
+
+  .call-to-action__content {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .call-to-action__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .call-to-action__description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .call-to-action__button {
+    padding: 15px 25px;
+    font-size: 18px;
+  }
+
+  .call-to-action__image {
+    display: none;
+  }
+}
